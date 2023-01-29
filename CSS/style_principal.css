@@ -1,0 +1,431 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-image: url('../IMG/fondonegro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.Inicio, .login, .usuarios, .contactos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-image: url('../IMG/fondonegro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    line-height: 40px;
+    position: fixed;
+}
+footer nav {
+    width: 80%;
+    margin: auto;
+    
+}
+
+footer nav a{
+    display: inline-block;
+    text-decoration:none;
+    width: 15.5%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.imagengym{
+    width: 86px;
+    height: 82px;
+}
+
+
+.cartasProductos{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedorProducto img{
+    width: 300px;
+    height: 300px;
+    padding: 2px 16px;
+
+}
+
+.contenedorProducto{
+    margin: 15px;
+    padding: 2px 16px;
+  
+    background: rgba(42, 42, 42, 0.727);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.contenedorProducto h2{
+
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.contenedorProducto:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.botonAgregar{
+    transition-duration: 0.4s;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(255, 136, 0);
+    color: wheat;
+    border: 2px solid wheat;
+    border-radius: 8px;
+    padding: 10px 20px;
+    right: 15px;
+    bottom: 10px;
+   margin-left: 35%;
+
+}
+
+.botonAgregar:hover{
+    background-color: white;
+    color:black;
+    
+}
+.Producto{
+    text-align: center;
+    color: wheat;
+    font-size: 1.5em;
+}
+.Precio{
+    text-align: center;
+    color: wheat;
+}
+
+
+.Inicio{
+    display: block;
+    flex-direction: column;
+    
+}
+.contactos{
+    display: none;
+    flex-direction: column;
+    
+}
+.Inicio h1{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 136, 0);
+    
+}
+.contactos h1{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 136, 0);
+    
+}
+
+.FondoCarrito h1{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 136, 0);
+    
+}
+.tituloCarrito{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 136, 0);
+    display: none;
+    
+}
+.contenedorServicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(42, 42, 42, 0.727);
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 4px rgb(0, 0, 0);
+}
+.contenedorServicio h1{
+   text-align: center;
+
+   
+}
+
+.contenedorServicio img{
+    width: 45%;
+    margin-right: 50px;
+   
+}
+
+.listaServicios{
+    width: 40%;
+    padding: 20px;
+}
+
+.servicios{
+    margin-bottom: 10px;
+}
+
+.nServicios{
+    margin-bottom: 10px;
+    color: rgb(255, 136, 0)
+}
+
+.numero{
+    display: inline-block;
+    background: linear-gradient(to right, rgb(255, 83, 9), rgb(252, 255, 56));
+    width: 30px;
+    height: 30px;
+    color: rgb(16, 6, 104);
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 30px;
+    margin-right: 10px;
+    
+
+}
+
+
+
+
+.botonEnviar{
+    font-size: 1.5em;
+    background-color:  rgb(255, 136, 0);
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding:  0,7em 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+.contenedorUsuarios{
+  
+    background: rgba(42, 42, 42, 0.727);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 2px;
+    width: 100%;
+    
+    box-shadow: 0 4px 10px 4px rgb(0, 0, 0);
+}
+
+#contactos{
+    background: rgba(42, 42, 42, 0.727);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 2px;
+    display: none;
+    box-shadow: 0 4px 10px 4px rgb(0, 0, 0);
+}
+
+#alertaContactos{
+    text-align: center;
+    color: rgb(244, 97, 44);
+    
+    font-size: 2.3em;
+    margin: auto;
+}
+
+
+
+
+#userTable{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px
+    
+}
+
+
+#userTable tr:nth-child(odd){
+    background: rgb(255, 136, 0);
+    color:black;
+   
+    
+    
+
+}
+
+#userTable tr:nth-child(even){
+    background: rgb(192, 189, 45);
+    color:black;
+    
+
+}
+
+#userTable td:hover{
+
+    background: rgb(208, 204, 198);
+   
+}
+
+.FondoCarrito{
+    background: rgba(42, 42, 42, 0.727);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 2px;
+    height: 100%;
+  
+    box-shadow: 0 4px 10px 4px rgb(0, 0, 0);
+}
+
+
+
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+    width: 1280px;
+    height: auto;
+	margin:auto ;
+	overflow: hidden;
+    background: rgba(42, 42, 42, 0.727);
+  
+    border-radius: 2px;
+    
+    box-shadow: 0 4px 10px 4px rgb(0, 0, 0);
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+    
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.slider-frame h1{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 136, 0);
+   
+}
+
+.slider-frame .logo{
+  
+    width: 20%;
+}
+
+.TextoServicios{
+    color: wheat;
+}
+
+.Facturacion{
+    display: none;
+}
+
+.ImagenFactura{
+  
+    display: block;
+    margin: 0px auto;
+}
+
+
+.imagenCarrito{
+
+    width: 100px;
+    height: 100px;
+}
+
+.TiempoEspera{
+    display: none;
+    font-size: 30px;
+}
+
+
+#limiteTabla{
+   text-align: right;
+   
+}
+
+.mostrarBienvenido{
+color: red;
+
+}
+
+.TituloBienvenido{
+    color: aliceblue;
+}
+
+.FondoFactura
+{
+   background-color: rgb(243, 242, 242);
+   width: 50%;
+   margin: auto;
+  
+}
+
+.Producto{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.ImagenLogo{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: none;
+    
+}
